@@ -40,7 +40,7 @@ p {
     shape-inside: circle(210px at 250px 250px);
     -webkit-clip-path: circle(210px at 250px 250px);
   } 
-  .element:hover{ 
+  .cyc:hover{ 
      -webkit-animation: scale 3s ease infinite;
   } 
   @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
