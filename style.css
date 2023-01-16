@@ -178,15 +178,23 @@ body {
 
 /* moving */
 .moving {   
+    transform-origin: center;
+    animation: moving linear 30s infinite reverse;
+    right:-160px ;
+    top: -50px;
     background-color: #f1c40f;
     color: white;
     width: 500px; 
     height: 500px;
     margin: 30px auto;
-    text-align: justify;
      shape-inside: polygon(250px 0, 350px 170px, 500px 180px, 380px 320px, 450px 500px, 250px 420px, 50px 500px, 120px 320px, 0px 180px, 150px 170px );
-    shape-padding: 10px;
-    transition: all 3s ease; 
+    shape-padding: 10px; 
     -webkit-clip-path: polygon(250px 0, 350px 170px, 500px 180px, 380px 320px, 450px 500px, 250px 420px, 50px 500px, 120px 320px, 0px 180px, 150px 170px );  
   
   } 
+
+  @keyframes moving{
+    100%{
+        transform: rotate(360deg);
+    }
+  }
