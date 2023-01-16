@@ -24,13 +24,13 @@ p {
 .element:hover {
   shape-inside: polygon(150px 0, 350px 0, 500px 300px, 0px 300px);
   -webkit-clip-path:  polygon(150px 0, 350px 0, 500px 300px, 0px 300px);
- shape-inside: circle(50%, 50%, 50%);
-  -webkit-clip-path: circle(50%, 50%, 50%);
+ /* shape-inside: circle(50%, 50%, 50%);
+  -webkit-clip-path: circle(50%, 50%, 50%); */
 } 
 /* circle */
 
 
-.element {   
+.cyc {   
     /* ... */
     shape-padding: 15px;
     /* blink */
@@ -55,7 +55,7 @@ body {
   margin: 20px auto 0;
 }
 
-.element {   
+.cyc {   
   background-color: #c0392b;
   color: white;
   width: 500px; 
@@ -73,10 +73,10 @@ body {
   
   shape-padding: 15px;
 } 
-.element:hover{ 
+.cyc:hover{ 
    -webkit-animation: scale 3s ease infinite;
 } 
-.element:hover .extra {
+.cyc:hover .extra {
   -webkit-animation: show 3s ease infinite;
 }
 
